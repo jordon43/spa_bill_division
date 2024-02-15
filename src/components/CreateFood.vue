@@ -120,7 +120,6 @@ export default {
 </template>
 
 <style scoped lang="sass">
-
 .add-products
     border: #1a1a1a 1px solid
     border-radius: 5px
@@ -141,10 +140,40 @@ export default {
     button
         padding: 5px 10px
         margin-top: 5px
+
 .title
     padding: 40px
+
 .list-products
     padding: 20px
+
 .error
     color: brown
+
+@media screen and (max-width: 1023px)
+  .title
+    padding: 20px !important
+
+  h1
+    font-size: 30px
+
+  p
+    padding: 0 2% 10px 2%
+
+  button
+    margin-top: 10px !important
+    width: 200px !important
+
+  .add-products
+    margin: 0 5%
+    .block-product
+      padding: 15px
+    .input-group
+      input
+        width: 100% !important
+      .input-group-text
+        margin: 0 auto
+        border: none
+        background-color: #ffffff
+
 </style>

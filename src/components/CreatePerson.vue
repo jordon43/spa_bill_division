@@ -29,7 +29,6 @@ export default {
     },
 
 }
-
 </script>
 
 <template>
@@ -73,15 +72,48 @@ export default {
 <style scoped lang="sass">
 .title
     padding: 40px
+
 .add-person
     .input-group
         padding: 0 30%
+
 .list-persons
     .title-persons
         font-size: 30px
     .id-person
         padding-right: 10px
+
 .next-btn
     margin: 20px
+
+@media screen and (max-width: 1023px)
+  .title
+    padding: 20px !important
+
+  h1
+    font-size: 30px
+
+  p
+    padding: 0 2% 10px 2%
+
+  input
+    width: 100% !important
+    border-radius: 0.375rem !important
+  //border-bottom-right-radius: 0 !important
+  //border-bottom-left-radius: 0 !important
+
+  button
+    margin-top: 10px !important
+    width: 200px !important
+
+  .add-person
+    .input-group
+      padding: 0 5% !important
+      button
+        margin: 0 auto !important
+        margin-top: 10px !important
+        border-radius: 0.375rem !important
+
+
 
 </style>
